@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const issueSchema = new mongoose.Schema({
+const IssueSchema = new mongoose.Schema({
   project: {
     type: String,
     required: true
@@ -39,4 +39,4 @@ const issueSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('Issue', issueSchema);
+module.exports = mongoose.model('Issue', IssueSchema);
